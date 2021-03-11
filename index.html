@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Gerador de Senha</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senhas</h1>
+    <strong>Senha com </strong>
+    <p id="numberRange">5</p>
+    <strong>caracteres</strong>
+    <input type="range" id="inputNumber" max="15" min="5" value="5" />
+    <button id="button">Gerar</button>
+    <div id="password"></div>
+  </div>
+  <script type="module">
+    import { App } from './src/App.js'
+    App.init();
+  </script>
+</body>
+</html>
